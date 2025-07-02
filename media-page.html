@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+</head>
+<body>
+    <img src = "/Assets/images.webp" alt = "Sauron The Great" width = "500" length = "650" title = "Sauron The Great">
+    <br>
+    <img src = "/Assets/gettyimages-156921036-612x612.jpg" alt = "Gollum The Not So Great" width = "500" length = "650" title = "Gollum the not so great">
+    <br>
+
+    <picture>
+        <source media = "(min-width: 850px)" srcset = "/Assets/ring.avif" width = "500" length = "600">
+        <source media = "(min-width: 650px)" srcset = "/Assets/The_One_Ring.webp" width = "500" length = "600">
+        <img src = "Assets/PEBKAC.jpeg" >
+    </picture>
+    <br>
+
+    <video width = "500" height = "500" controls>
+        <source src = "/Assets/01. Astartes - Part One.mp4" type = "video/mp4" >
+        Your browser, somehow, doesn't support HTML video tag!
+    </video>
+    <video width = "500" height = "500" controls>
+        <source src = "/Assets/02. Astartes - Part Two.mp4" type = "video/mp4" >
+        Your browser, somehow, doesn't support HTML video tag!
+    </video>
+    <video width = "500" height = "500" controls>
+        <source src = "/Assets/03. Astartes - Part Three.mp4" type = "video/mp4" >
+        Your browser, somehow, doesn't support HTML video tag!
+    </video>
+    <video width = "500" height = "500" controls>
+        <source src = "/Assets/04. Astartes - Part Four.mp4" type = "video/mp4" >
+        Your browser, somehow, doesn't support HTML video tag!
+    </video>
+    <video width = "500" height = "500" controls>
+        <source src = "/Assets/Astartes - Part Five.mp4" type = "video/mp4" >
+        Your browser, somehow, doesn't support HTML video tag!
+    </video>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sXwaRjU7Tj0?si=4KwYhpx54Pdhm_qC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+        <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;">
+            <iframe style="height:100%;width:100%;border:0;" 
+            frameborder="0" 
+            src="https://www.google.com/maps/embed/v1/place?q=Island+in+a+lake+on+an+island+in+a+lake+on+an+island+in+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html> 
