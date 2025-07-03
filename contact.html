@@ -6,8 +6,8 @@
     <title>Contact</title>
 </head>
 <body>
-    <fieldset>
-        <form>
+    <form>
+        <fieldset>
             <label for = "name"> Name: </label>
             <input type = "text" id = "name" name = "name" required> <br>
 
@@ -15,34 +15,34 @@
             <input type = "text" id = "email" name = "email" required> <br>
 
             <label for = "age"> Age:</label>
-            <input type = "number" id = "age" name = "age" > <br>
+            <input type = "number" id = "age" name = "age"  min = 1 max = 120> <br>
 
             <label for = "message">Text area (because apparently why not)</label> <br>
             <textarea id = "message"  name = "message" rows= "10" cols = "40" required> </textarea>
+        </fieldset>
+        <fieldset>
+            <label for = "topic">Topic: </label>
+            <select id = "topic" name = "topic">
+                <option value = "general">General</option>
+                <option value = "support">Support</option>
+                <option value = "feedback">Feedback</option>
+                <option value = "other">Other</option>
+            </select>  
+        </fieldset> 
+        <fieldset>
+            <div>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">Email</label><br>
 
-        </form>
-    </fieldset>
-    <fieldset>
-        <label for = "topic">Topic: </label>
-        <select id = "topic" name = "topic">
-            <option value = "general">General</option>
-            <option value = "support">Support</option>
-            <option value = "feedback">Feedback</option>
-            <option value = "other">Other</option>
-        </select>   
-        <br>
-    
-        <div>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">Email</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Phone</label><br>
 
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">Phone</label><br>
-
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Other</label>
-        </div>
-    </fieldset>
-    <button>Submit</button>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Other</label>
+            </div>  
+        </fieldset>
+        <button>Submit</button>
+    </form>
+       
 </body>
 </html>
